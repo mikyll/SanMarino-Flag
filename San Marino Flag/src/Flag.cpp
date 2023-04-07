@@ -16,7 +16,7 @@ static void createBackground()
 	figBackgroundBottom.vertices.push_back({ 0.0f, 0.0f, 0.0f });
 	for (int i = 0; i < figBackgroundBottom.vertices.size(); i++)
 	{
-		figBackgroundBottom.colors.push_back(COLOR_LIGHT_BLUE);
+		figBackgroundBottom.colors.push_back(COLOR_LIGHT_BLUE_ON_THE_FLAG);
 	}
 	createFigureVAO(&figBackgroundBottom);
 	flag.push_back(figBackgroundBottom);
@@ -39,9 +39,18 @@ static void createBackground()
 	flag.push_back(figBackgroundTop);
 }
 
+static void createTower(Point3D pos)
+{
+
+}
+
+static void createCoatOfArms()
+{
+
+}
+
 void buildFlag()
 {
-	// background
 	createBackground();
 }
 
